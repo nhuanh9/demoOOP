@@ -1,11 +1,11 @@
 package com.company;
 
 public class Book {
-    String name;
-    double price;
-    int amount;
-    String category;
-    String author;
+    private String name;
+    private double price;
+    private int amount;
+    private String category;
+    private String author;
 
     public Book(String name, double price, int amount, String category, String author) {
         this.name = name;
@@ -16,6 +16,13 @@ public class Book {
     }
 
     public Book() {
+
+    }
+
+    public Book(String name, double price, int amount) {
+        this.name = name;
+        this.price = price;
+        this.amount = amount;
     }
 
     public String getName() {
@@ -69,3 +76,4 @@ public class Book {
                 '}';
     }
 }
+
